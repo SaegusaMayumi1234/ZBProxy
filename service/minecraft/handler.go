@@ -187,6 +187,7 @@ func NewConnHandler(s *config.ConfigProxyService,
 			return nil, err
 		}
 		playerName = string(buffer.Bytes())
+		log.Print(color.HiRedString("Test: %v", mcprotocol.ReadVarIntFrom(c)))
 	}
 
 	if s.Minecraft.OnlineCount.EnableMaxLimit && s.Minecraft.OnlineCount.Max <= int(options.OnlineCount.Load()) {
