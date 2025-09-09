@@ -12,7 +12,6 @@ func generateKickMessage(s *config.ConfigProxyService, name string) mcprotocol.M
 	return mcprotocol.Message{
 		Color: mcprotocol.White,
 		Extra: []mcprotocol.Message{
-			{Bold: true, Color: mcprotocol.Red, Text: "Hypixel"},
 			{Bold: true, Text: "Proxy"},
 			{Text: " - "},
 			{Bold: true, Color: mcprotocol.Gold, Text: "Connection Rejected\n"},
@@ -35,7 +34,6 @@ func generatePlayerNumberLimitExceededMessage(s *config.ConfigProxyService, name
 	return mcprotocol.Message{
 		Color: mcprotocol.White,
 		Extra: []mcprotocol.Message{
-			{Bold: true, Color: mcprotocol.Red, Text: "Hypixel"},
 			{Bold: true, Text: "Proxy"},
 			{Text: " - "},
 			{Bold: true, Color: mcprotocol.Gold, Text: "Connection Rejected\n"},
